@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .prose-french h2 {
+    @apply text-french-blue border-b-2 border-french-red pb-2 mb-4;
+  }
+
+  .card {
+    @apply rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 rounded-lg bg-french-blue text-white font-medium hover:bg-blue-900 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2 rounded-lg border border-french-blue text-french-blue font-medium hover:bg-blue-50 transition-colors;
+  }
+}
